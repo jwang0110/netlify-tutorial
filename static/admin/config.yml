@@ -21,7 +21,12 @@ collections:
       - { label: "Publish Date", name: "dateCreated", widget: "datetime" }
       - { label: "Last Updated", name: "dateUpdated", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Author(s)", name: "authors", widget: "list" }
+      - {
+          label: "Author(s)",
+          name: "authors",
+          widget: "list",
+          default: "{{author}}",
+        }
       - {
           label: "Layout Template",
           name: "template",
