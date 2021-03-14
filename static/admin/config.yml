@@ -25,7 +25,7 @@ collections:
           label: "Author(s)",
           name: "authors",
           widget: "list",
-          default: "{{author}}",
+          default: ["{{author}}"],
         }
       - {
           label: "Layout Template",
