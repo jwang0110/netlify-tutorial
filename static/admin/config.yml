@@ -33,7 +33,7 @@ collections:
               { label: "Default", value: "default" },
             ],
         }
-        - {
+      - {
           label: "Status",
           name: "status",
           widget: "select",
@@ -50,7 +50,7 @@ collections:
           widget: "image",
           required: false,
         }
-        - {
+      - {
           label: "Cover Image",
           name: "cover",
           widget: "image",
