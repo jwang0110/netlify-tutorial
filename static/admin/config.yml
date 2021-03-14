@@ -18,6 +18,42 @@ collections:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Publish Date", name: "dateCreated", widget: "datetime" }
+      - { label: "Last Updated", name: "dateUpdated", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
+      - { label: "Author(s)", name: "authors", widget: "list" }
+      - {
+          label: "Layout Template",
+          name: "template",
+          widget: "select",
+          options:
+            [
+              { label: "Post", value: "post" },
+              { label: "Page", value: "page" },
+              { label: "Default", value: "default" },
+            ],
+        }
+        - {
+          label: "Status",
+          name: "status",
+          widget: "select",
+          options:
+            [
+              { label: "Draft", value: "draft" },
+              { label: "Waiting For Review", value: "review" },
+              { label: "Published", value: "published" },
+            ],
+        }
+      - {
+          label: "Featured Image",
+          name: "thumbnail",
+          widget: "image",
+          required: false,
+        }
+        - {
+          label: "Cover Image",
+          name: "cover",
+          widget: "image",
+          required: false,
+        }
       - { label: "Body", name: "body", widget: "markdown" }
